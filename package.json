@@ -10,7 +10,10 @@
     "install-backend": "cd Backend && npm ci",
     "postinstall": "npm run build",
     "start": "cd Backend && node server.js",
-    "dev": "cd Backend && npm run dev"
+    "dev": "cd Backend && npm run dev",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "dev:setup": "npm run build && npm run dev",
+    "quick-deploy": "npm run build && git add . && git commit -m \"Quick update\" && git push"
   },
   "keywords": ["online-judge", "coding-platform", "react", "nodejs"],
   "author": "AbhishekKumar993",
