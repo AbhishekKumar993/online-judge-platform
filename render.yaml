@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: online-judge-platform
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+    # Add your MongoDB URI and other environment variables in Render dashboard
