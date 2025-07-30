@@ -8,6 +8,7 @@
     "build-frontend": "cd Frontend && npm run build",
     "copy-frontend": "node copy-frontend.js",
     "install-backend": "cd Backend && npm ci",
+    "postinstall": "npm run build",
     "start": "cd Backend && node server.js",
     "dev": "cd Backend && npm run dev"
   },
