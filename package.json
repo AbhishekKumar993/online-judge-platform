@@ -6,7 +6,7 @@
     "build": "npm run install-frontend && npm run build-frontend && npm run copy-frontend && npm run install-backend",
     "install-frontend": "cd Frontend && npm ci",
     "build-frontend": "cd Frontend && npm run build",
-    "copy-frontend": "cp -r Frontend/dist Backend/dist || true",
+    "copy-frontend": "node copy-frontend.js",
     "install-backend": "cd Backend && npm ci",
     "start": "cd Backend && node server.js",
     "dev": "cd Backend && npm run dev"
