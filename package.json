@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Online Judge Platform with React Frontend and Node.js Backend",
   "scripts": {
-    "build": "npm run install-frontend && npm run build-frontend && npm run install-backend",
+    "build": "npm run install-frontend && npm run build-frontend && npm run copy-frontend && npm run install-backend",
     "install-frontend": "cd Frontend && npm ci",
     "build-frontend": "cd Frontend && npm run build",
+    "copy-frontend": "cp -r Frontend/dist Backend/dist || true",
     "install-backend": "cd Backend && npm ci",
     "start": "cd Backend && node server.js",
     "dev": "cd Backend && npm run dev"
