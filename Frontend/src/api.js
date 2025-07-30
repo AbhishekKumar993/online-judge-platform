@@ -2,8 +2,8 @@ import axios from 'axios';
 
 // Use the current domain for production, localhost for development
 const API_URL = process.env.NODE_ENV === 'production' 
-  ? window.location.origin 
-  : 'http://localhost:5000';
+  ? window.location.origin + '/api'
+  : 'http://localhost:5000/api';
 
 const axiosInstance = axios.create({
   baseURL: API_URL,
