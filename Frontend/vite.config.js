@@ -7,12 +7,12 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist',
-    emptyOutDir: true,
+    outDir: 'dist', // Outputs build to Backend
+    emptyOutDir: true, // Cleans the output directory before build
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(__dirname, 'src'), // Use @ for easier imports
     },
   },
   css: {
