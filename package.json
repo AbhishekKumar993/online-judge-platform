@@ -4,7 +4,7 @@
   "description": "Online Judge Platform with React Frontend and Node.js Backend",
   "scripts": {
     "build": "npm run install-frontend && npm run build-frontend && npm run copy-frontend && npm run install-backend",
-    "install-frontend": "cd Frontend && npm ci",
+    "install-frontend": "cd Frontend && NODE_ENV=development npm install",
     "build-frontend": "cd Frontend && npm run build",
     "copy-frontend": "node copy-frontend.js",
     "install-backend": "cd Backend && npm ci",
