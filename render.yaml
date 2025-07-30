@@ -13,3 +13,4 @@ services:
         value: false
     # Add your environment variables in Render dashboard:
     # MONGO_URI, JWT_SECRET, ADMIN_SECURITY_KEY
+    # Force redeploy - updated build script
