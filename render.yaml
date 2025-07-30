@@ -4,10 +4,15 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: npm run build
+    buildCommand: |
+      echo "🚀 Starting custom build process..."
+      npm run build
+      echo "✅ Build process completed"
     startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NPM_CONFIG_PRODUCTION
+        value: false
     # Add your environment variables in Render dashboard:
     # MONGO_URI, JWT_SECRET, ADMIN_SECURITY_KEY
