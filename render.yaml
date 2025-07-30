@@ -4,10 +4,7 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: |
-      echo "🚀 Starting custom build process..."
-      npm run build
-      echo "✅ Build process completed"
+    buildCommand: ./build.sh
     startCommand: npm start
     envVars:
       - key: NODE_ENV
