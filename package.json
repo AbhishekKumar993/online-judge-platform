@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Online Judge Platform with React Frontend and Node.js Backend",
   "scripts": {
-    "build": "cd Frontend && npm install && npm run build",
-    "start": "cd Backend && npm install && node server.js",
-    "dev": "cd Backend && npm run dev",
-    "install-deps": "cd Backend && npm install && cd ../Frontend && npm install",
-    "postinstall": "npm run install-deps"
+    "build": "npm run install-frontend && npm run build-frontend && npm run install-backend",
+    "install-frontend": "cd Frontend && npm ci",
+    "build-frontend": "cd Frontend && npm run build",
+    "install-backend": "cd Backend && npm ci",
+    "start": "cd Backend && node server.js",
+    "dev": "cd Backend && npm run dev"
   },
   "keywords": ["online-judge", "coding-platform", "react", "nodejs"],
   "author": "AbhishekKumar993",
